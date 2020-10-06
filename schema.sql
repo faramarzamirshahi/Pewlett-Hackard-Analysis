@@ -16,9 +16,9 @@ CREATE TABLE employees (
      PRIMARY KEY (emp_no)
 );
 
-CREATE TABLE dept_manager (
-dept_no VARCHAR(4) NOT NULL,
+CREATE TABLE dept_emp (
     emp_no INT NOT NULL,
+dept_no VARCHAR(4) NOT NULL,
     from_date DATE NOT NULL,
     to_date DATE NOT NULL,
 FOREIGN KEY (emp_no) REFERENCES employees (emp_no),
@@ -35,7 +35,7 @@ CREATE TABLE salaries (
   PRIMARY KEY (emp_no)
 );
 
-CREATE TABLE "Managers" (
+CREATE TABLE "managers" (
     "dept_no" varchar(4)   NOT NULL,
     "emp_no" int   NOT NULL,
     "from_date" date   NOT NULL,
@@ -47,12 +47,12 @@ CREATE TABLE "Managers" (
 	CONSTRAINT "fk_managers_emp_no" FOREIGN KEY (emp_no) references employees(emp_no)
 );
 
-CREATE TABLE "Titles" (
+CREATE TABLE "titles" (
     "emp_no" int   NOT NULL,
     "title" varchar   NOT NULL,
     "from_date" date   NOT NULL,
     "to_date" date   NOT NULL,
-    CONSTRAINT "pk_Titles" PRIMARY KEY (
-        "emp_no"
+    CONSTRAINT "pk_titles" PRIMARY KEY (
+        "emp_no","from_date"
      )
 );
