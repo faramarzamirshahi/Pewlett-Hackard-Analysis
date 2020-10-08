@@ -6,33 +6,27 @@ We want to determine the number of retiring employees per title, and identify em
 1- We first create a list of employees and their titles that will be retiring soon.<br>
    We assume that the employees who retire soon are born between years 1952 to 1955.<br>
    We save this list as retirement_titles<br>
-retirement_titles
 	![employees retiring soon](retirement_titles.png)
 
 2- We then create a list without duplicates from the retirement_titles.<br>
    We call this list unique_titles<br>
-   unique_titles
     ![retiring employees without duplicates](unique_titles.png)
 
 3- Using the unique_titles, we prepare a count of each titles for the retiring employees.<br>
    We call this list retiring_titles<br>
-   retiring_titles
     ![retiring titles](retiring_titles.png)
 
 4- Finally we create a list of employees eligible for the mentorship program.<br>
    These are the ones who were born in 1965. We call this list mentorship_eligibility<br>
-   mentorship_eligibility
     ![mentorship eligibility](mentorship_eligibility.png)
     
 
 # Summary
 
 As we see from the figure of retiring_titles, there are a number of positions that need to be filled.<br>
-retiring_titles
 ![retiring titles](retiring_titles.png)
 
 We see that the number of eligible employees for mentorship is a fraction of retiring ones for each title<br>
-mentor_count
 ![count of eligible mentors](mentor_count.png)
 
 The good news is that there are enough retirement-ready employees to mentor the next generation, however, to fill the position for all the retiring employees an intense re-hiring campaign is needed.
